@@ -7,6 +7,7 @@ php:
   - 5.6
 
 before_install:
+  - echo ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
   - mysql -uroot -e 'create database eloquent_only;'
   - mysql -uroot -e 'use eloquent_only; CREATE TABLE users ( `id` int(11) , name varchar(11));'
 
