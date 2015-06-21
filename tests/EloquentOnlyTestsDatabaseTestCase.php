@@ -8,7 +8,9 @@ abstract class EloquentOnlyTestsDatabaseTestCase extends PHPUnit_Extensions_Data
     {
         if ($this->conn === null) {
             if (self::$pdo == null) {
-                self::$pdo = new PDO("mysql:dbname=eloquent-only;", "root");
+                $database = getenv('DATABASE');
+                $username = getenv('USERNAME');
+                self::$pdo = new PDO("mysql:dbname={$database};", $username);
             }
             $this->conn = $this->createDefaultDBConnection(self::$pdo, ':memory:');
         }

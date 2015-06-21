@@ -16,4 +16,8 @@
             <directory suffix=".php">./tests/</directory>
         </testsuite>
     </testsuites>
+    <php>
+        <env name="DATABASE" value="eloquent_only" />
+        <env name="USERNAME" value="root" />
+    </php>
 </phpunit>

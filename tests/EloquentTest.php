@@ -22,8 +22,8 @@ class EloquentTest extends EloquentOnlyTestsDatabaseTestCase
             array(
                 'driver'   => 'mysql',
                 'host'     => 'localhost',
-                'database' => 'eloquent-only',
-                'username' => 'root',
+                'database' => getenv('DATABASE'),
+                'username' => getenv('USERNAME'),
                 'password' => '',
                 'port'     => 3306,
                 'charset'  => 'utf8'

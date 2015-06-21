@@ -7,7 +7,7 @@ php:
 
 before_install:
   - mysql -uroot -e 'create database eloquent-only;'
-  - mysql -uroot -e 'use hoge; CREATE TABLE users ( `id` int(11) , name varchar(11));'
+  - mysql -uroot -e 'use eloquent_only; CREATE TABLE users ( `id` int(11) , name varchar(11));'
 
 install:
   - travis_retry composer install --no-interaction --prefer-source
