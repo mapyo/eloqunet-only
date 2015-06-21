@@ -1,6 +1,5 @@
 <?php
 namespace Mapyo\EloquentOnly;
-use Mapyo\EloquentOnly\Manager;
 
 class Eloquent
 {

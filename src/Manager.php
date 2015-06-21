@@ -7,7 +7,7 @@ use \Illuminate\Container\Container;
 
 class Manager
 {
-    private static $eloquent = null;
+    private $eloquent = null;
 
     public static function getInstance()
     {
