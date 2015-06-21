@@ -1,0 +1,16 @@
+language: php
+
+php:
+  - 5.4
+  - 5.5
+  - 5.6
+
+before_install:
+  - mysql -uroot -e 'create database eloquent-only;'
+  - mysql -uroot -e 'use hoge; CREATE TABLE users ( `id` int(11) , name varchar(11));'
+
+install:
+  - travis_retry composer install --no-interaction --prefer-source
+
+script:
+  - ./vendor/bin/phpunit
