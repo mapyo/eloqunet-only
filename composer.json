@@ -1,0 +1,25 @@
+{
+    "name": "mapyo/eloquent-only",
+    "description": "Use only eloquent in laravel",
+    "keywords": ["laravel", "eloquent"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mapyo",
+            "email": "falcon.phantom.spidar.haptic@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "illuminate/database": "~4.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0",
+        "mockery/mockery": "0.9.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mapyo\\EloquentOnly\\": "src/"
+        }
+    }
+}
