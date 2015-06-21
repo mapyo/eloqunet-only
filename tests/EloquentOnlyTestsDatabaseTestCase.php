@@ -3,6 +3,7 @@
 abstract class EloquentOnlyTestsDatabaseTestCase extends PHPUnit_Extensions_Database_TestCase
 {
     static private $pdo = null;
+    private $conn = null;
 
     final public function getConnection()
     {
