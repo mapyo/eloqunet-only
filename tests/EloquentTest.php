@@ -26,6 +26,7 @@ class EloquentTest extends EloquentOnlyTestsDatabaseTestCase
                 'username' => getenv('USERNAME'),
                 'password' => '',
                 'port'     => 3306,
+                'collation' => 'utf8_unicode_ci',
                 'charset'  => 'utf8'
             )
         );
