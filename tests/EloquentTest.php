@@ -12,7 +12,7 @@ class EloquentTest extends EloquentOnlyTestsDatabaseTestCase
     public function getDataSet()
     {
         return new PHPUnit_Extensions_Database_DataSet_YamlDataSet(
-            __DIR__ . "/_files/Users.yml"
+            __DIR__ . "/_files/users.yml"
         );
     }
 
