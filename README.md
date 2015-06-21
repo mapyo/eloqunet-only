@@ -9,6 +9,7 @@ composer require mapyo/eloquent-only
 ## Usage
 
 ```php
+<?php
 use Mapyo\EloquentOnly\Eloquent;
 $loader = require('./vendor/autoload.php');
 
